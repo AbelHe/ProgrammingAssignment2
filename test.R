@@ -1,3 +1,15 @@
+#just update the testing commands...
+source("cachematrix.R")
+A <- matrix(c(2, -1, 0, -1, 2, -1, 0, -1, 2), 3)
+a <- makeCacheMatrix(A)
+cacheSolve(a)
+cacheSolve(a)
+cacheSolve(a)
+
+
+## below is for test and reference only
+
+
 makeVector <- function(x = numeric()) {
       m <- NULL
       set <- function(y) {
